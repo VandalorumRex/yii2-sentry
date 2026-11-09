@@ -152,7 +152,7 @@ class LogTarget extends Target
      * @param Severity $level The severity level
      * @param array $options Additional options
      */
-    protected function captureMessage(string $message, Severity $level = null, array $options = []): void
+    protected function captureMessage(string $message, ?Severity $level = null, array $options = []): void
     {
         if ($level === null) {
             $level = Severity::info();
