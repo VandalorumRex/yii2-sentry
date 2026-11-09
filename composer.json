@@ -15,8 +15,8 @@
     }
   ],
   "require": {
-    "php": ">=7.4",
-    "yiisoft/yii2": "~2.0.14",
+    "php": ">=8.0",
+    "yiisoft/yii2": "^2.0.14",
     "sentry/sentry": "^4.0"
   },
   "require-dev": {
@@ -35,6 +35,14 @@
     "process-timeout": 1800,
     "fxp-asset": {
       "enabled": false
+    },
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true
     }
-  }
+  },
+  "repositories": [{
+    "name": "asset-packagist",
+    "type": "composer",
+    "url": "https://asset-packagist.org"
+  }]
 }
